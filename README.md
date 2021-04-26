@@ -1,11 +1,13 @@
 # TomatoScripts
 
+Main problem of Entware and Tomato: scripts launched before timesync. Therefore, Netdata removes last saved data and starting from scratch
+
 ### Requirements
 1. timeout packet from Entware
 
 ### Main mount goal is to:
 1. Check script for duplicates
-2. Launch Entware service only after time sync. Waits 120s with 0.5s checking
+2. Launch Entware scripts only after time sync. Waits 120s with 0.5s checking
 3. Enable swap
 
 ### Main unmount goal is to:
